@@ -1,42 +1,60 @@
-📞 Contact
+# 📞 Contact
 
-[Termux guides if you run on mobile](https://github.com/MeoMunDep/Guides-for-using-my-script-on-termux)
+> **If you're running this bot on mobile**, check this Termux setup guide:  
+> 👉 [Termux guides](https://github.com/MeoMunDep/Guides-for-using-my-script-on-termux)
 
 If you encounter any issues or have questions, feel free to reach out:
 
-- Contact: [Link](t.me/MeoMunDep)
-- Group: [Link](t.me/KeoAirDropFreeNe)
-- Channel: [Link](t.me/KeoAirDropFreeNee)
+- 💬 **Contact:** [t.me/MeoMunDep](t.me/MeoMunDep)  
+- 👥 **Group:** [t.me/KeoAirDropFreeNe](t.me/KeoAirDropFreeNe)  
+- 📢 **Channel:** [t.me/KeoAirDropFreeNee](t.me/KeoAirDropFreeNee)
 
-Help me with your referral [Link](https://t.me/DePIN_Alliance_Bot/play?startapp=OdZUfRzp80)
+🙏 Help me with your referral:  
+[**Play via DePIN Alliance**](https://t.me/DePIN_Alliance_Bot/play?startapp=OdZUfRzp80)
+
+---
 
 ## 🚀 Getting Started
 
-To get started with the bot, follow these steps:
+<details>
+<summary><b>0️⃣ Download and Setup NodeJS</b></summary>
 
-0. **Dowload NodeJS to run the bot**
+- **Node.js**: `22.11.0`  
+- **npm**: `10.9.0`
 
-- **Node.js** (Version: `22.11.0`)
-- **npm** (Version: `10.9.0`)
+📥 Download Node.js & npm here: [Download Link](https://t.me/KeoAirDropFreeNe/257/1462)
 
-Download Node.js and npm here: [Download Link](https://t.me/KeoAirDropFreeNe/257/1462).
+Once installed:
 
--> Double click on `setup.bat` for windows or `setup.sh` for linux/mac if you want to run automatically, remember to fill all the necessary data.
+- Double-click `setup.bat` for **Windows**
+- Or run `setup.sh` for **Linux/Mac**
 
+> ⚙️ Make sure to fill all necessary data before running automatically.
+</details>
 
-1. **Install Dependencies and Modules:**
+---
 
-   ```
-   npm i user-agents axios meo-forkcy-colors meo-forkcy-utils meo-forkcy-proxy meo-forkcy-logger 
-   ```
+<details>
+<summary><b>1️⃣ Install Dependencies</b></summary>
 
-2. **Prepare Configuration Files:**
+Run this command inside the bot directory:
 
-   > You'll need to set up a few configuration files for the bot to work properly.
+```bash
+npm i user-agents axios meo-forkcy-colors meo-forkcy-utils meo-forkcy-proxy meo-forkcy-logger
+````
 
-## 📁 Configuration Files
+</details>
 
-### 1. `configs.json` 📜 - Adjust configuration
+---
+
+<details>
+<summary><b>2️⃣ Prepare Configuration Files</b></summary>
+
+You need to set up several files before running the bot.
+
+---
+
+### 📜 `configs.json`
 
 ```json
 {
@@ -59,13 +77,17 @@ Download Node.js and npm here: [Download Link](https://t.me/KeoAirDropFreeNe/257
   "howManyPointsYouWantToContributeToLeague": 100000,
   "isContributeAutomatic": true,
   "referralCode": "OdZUfRzp80",
-  "itemThatYouWantToContributeToLeague": ["RAM_4GB", 1] - Fill the item's code and number of item, find number code in items.json file.
+  "itemThatYouWantToContributeToLeague": ["RAM_4GB", 1]
 }
-
 ```
 
-### 2. `datas.txt` 🗂️ - [Get it from here](https://t.me/KeoAirDropFreeNee/1586)
+> 🧩 Fill the item’s **code** and **quantity** from `items.json`.
 
+---
+
+### 🗂️ `datas.txt`
+
+> [Download from Telegram](https://t.me/KeoAirDropFreeNee/1586)
 
 ```txt
 query_id.../user...
@@ -73,20 +95,26 @@ query_id.../user...
 query_id.../user...
 ```
 
-### 3. `wallets.txt` 💼 - Cannot update yet.
+---
 
-- Wallets generator: [Link](https://github.com/MeoMunDep/Automatic-Ultimate-Create-Wallets-for-Airdrop)
+### 💼 `wallets.txt`
 
+> Wallet generator: [Automatic Wallet Creator](https://github.com/MeoMunDep/Automatic-Ultimate-Create-Wallets-for-Airdrop)
 
-```txt - wallet address
-abc...xyz
-abc...xyz
-abc...xyz
+```txt
+0xabc...xyz
+0xdef...123
+0xghi...456
 ```
 
-### 4. `proxies.txt` 🌐 - Proxy is an option. If you have one, fill it in; otherwise, leave it blank.
+> ❗ *Currently wallet update feature is not yet supported.*
 
-- [Get it from here](https://www.webshare.io/?referral_code=4l5kb3glsce7)
+---
+
+### 🌐 `proxies.txt`
+
+> Optional — You can leave it blank if you don’t use proxies.
+> Get free proxies: [webshare.io (ref link)](https://www.webshare.io/?referral_code=4l5kb3glsce7)
 
 ```txt
 http://host:port
@@ -99,9 +127,28 @@ socks4://user:pass@host:port
 socks5://user:pass@host:port
 ```
 
-💡 Usage:
+</details>
 
-> You need to `cd` to the file after extract it
-> To run the bot, use the following command: `cd depin-alliance; node meomundep`
+---
 
-🎇Enjoy!
+<details>
+<summary><b>💡 How to Run the Bot</b></summary>
+
+1. Open a terminal inside the extracted bot folder:
+
+   ```bash
+   cd depin-alliance
+   ```
+
+2. Run the main script:
+
+   ```bash
+   node meomundep
+   ```
+
+> ✅ You’re all set!
+> The bot will automatically handle tasks, play games, buy items, and contribute to leagues as configured.
+
+🎇 **Enjoy farming with MeoMunDep!**
+
+</details>
